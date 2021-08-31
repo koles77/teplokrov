@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <section id="headItems">
+      <header>
+        <div id="logo">
+
+        </div>
+
+        <div id="navBar">
+          <p>
+            Обогрев кровли
+          </p>
+          <p>
+            Этапы работы
+          </p>
+          <p id="rightItemNavbar">
+            Фото проектов
+          </p>
+        </div>
+
+        <div id="feedback">
+          <p>
+            +7(964)713-46-50
+          </p>
+          <button type="button" name="Calling">
+            Заказать звонок
+          </button>
+        </div>
+      </header>
+
+      <section id="commonInfo">
+        <p id="nameCompany">
+          Кабельный <br> электрообогрев кровли
+        </p>
+        <p id="infCompany">
+          Проблема с наледью на кровле крыш, в водосточных трубах и желобах?
+        </p>
+        <button type="button" name="send" class="textButton">
+          Отправить заявку
+        </button>
+      </section>
+
+      <section id="form_feedback">
+        <div id="headlineForm">
+          <h1> Заказать расчет </h1>
+          <p> Расчеты выполняются в течение рабочего дня, после чего мы выдаем предварительное коммерческое предложение </p>
+        </div>
+        <!--в параметр формы action добавить свой адрес скрипта-->
+        <form name="cont_form" action="http://localhost/TeploKrov/action.php" method="post" target="_blank" onsubmit="return validate_form ( );" enctype="multipart/form-data">
+          <div class="formItem">
+            <p> Имя: <span>*</span> </p>
+            <input type="text" name="user_name" placeholder="Ввведите имя" required="required">
+          </div>
+          <div class="formItem">
+            <p> Телефон: <span>*</span> </p>
+            <input type="text" name="user_tel" placeholder="Введите номер телефона" required="required">
+          </div>
+          <div class="formItem">
+            <p> E-mail: <span>*</span> </p>
+            <input type="text" name="user_mail" placeholder="Введите адрес электронной почты">
+          </div>
+          <div>
+            <p> Файл: </p>
+            <button type="button" name="button">
+              <input type="file" name="myFile" value="" required="required">
+            </button>
+          </div>
+
+          <button type="submit" name="button"> Отправить </button>
+        </form>
+      </section>
+
+    </section>
+
+
+   <script src="js/main.js"></script>
+  </body>
+</html>
